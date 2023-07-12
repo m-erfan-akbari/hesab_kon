@@ -1,0 +1,9 @@
+.stopwatch-duration{
+    font-family: 'b titr';
+}
+.bg-dark-green:hover{
+    background-color: #00221fb3;
+    color: white;
+    scale: .96;
+    transition: all .4s ease;
+}

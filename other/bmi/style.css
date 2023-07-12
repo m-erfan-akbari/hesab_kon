@@ -1,0 +1,40 @@
+body{
+    overflow-x: hidden;
+}
+.bmi-input{
+    background: none;
+    border-radius: 25px;
+    border: 2px solid #444;
+}
+.shape{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: black;
+    height: 80px;
+    width: 250px;
+    clip-path: polygon(75% 0%, 90% 50%, 75% 100%, 0% 100%, 10% 50%, 0% 0%);
+    transition: 3s margin-left ease;
+}
+.shape:nth-child(1){
+    background-color: #ff4444;
+}
+.shape:nth-child(2){
+    background-color: #ff8f44;
+}
+.shape:nth-child(3){
+    background-color: #fffc44;
+}
+.shape:nth-child(4){
+    background-color: #66ff44;
+}
+.shape:nth-child(5){
+    background-color: #4444ff;
+}
+
+@media (min-width: 1000px) {
+    .shapeAnimation{
+        margin-left: -250px;
+    }
+}

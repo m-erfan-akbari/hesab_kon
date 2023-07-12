@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب کن</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="menu">
+        <div class="container-fluid">
+            <a href="../../index.html"><i class="bi bi-calculator-fill text-light fs-1"></i></a>
+            <a class="navbar-brand fs-4 ms-3 text-light" href="../../index.html">حساب کن</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-dark">
+                    <li class="nav-item btn fs-5 p-0">
+                        <a class="nav-link text-light" href="../../index.html">خانه</a>
+                    </li>
+                    <li class="nav-item btn fs-5 p-0 d-flex flex-column justify-content-center position-relative dropdown-category">
+                        <a class="nav-link text-light calc" href="#">محاسبات</a>
+                        <div class="position-absolute dropdown-container">
+                            <ul class="nav flex-column text-start p-0">
+                                <li class="nav-item p-2 mx-0 position-relative">
+                                    <a class="text-decoration-none text-dark" href="../../time/index.html">زمان</a>
+                                </li>
+                                <li class="nav-item p-2 mx-0"><a class="text-decoration-none text-dark" href="../../convert/index.html">تبدیل</a></li>
+                                <li class="nav-item p-2 mx-0"><a class="text-decoration-none text-dark" href="../../math/index.html">ماشین حساب</a></li>
+                                <li class="nav-item p-2 mx-0"><a class="text-decoration-none text-dark" href="../../other/index.html">سایر</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item btn fs-5 p-0">
+                        <a class="nav-link text-light" href="../../about-me.html">ارتباط با ما</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header class="px-5 pt-3 d-flex" style="--bs-breadcrumb-divider: '>';">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-decoration-none" href="../../index.html">خانه</a></li>
+            <li class="breadcrumb-item"><a class="text-decoration-none" href="../index.html">زمان</a></li>
+            <li class="breadcrumb-item"><a class="text-decoration-none" href="#">کرنومتر</a></li>
+        </ol>
+    </header>
+
+    <!-- content -->
+    <div class="container w-50 my-5 p-3 rounded-1 bg-primary-color">
+        <div class="row text-center">
+            <div class="col h3 stopwatch-duration">00:00:00</div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col btn bg-dark-green mx-2 stopwatch-start">شروع</div>
+            <div class="col btn bg-dark-green mx-2 stopwatch-pause">ریست</div>
+            <div class="col btn bg-dark-green mx-2 stopwatch-lap">ثبت</div>
+        </div>
+        <div class="row fs-4" style="font-family: 'b titr';">
+            <ul class="col-12 nav pt-3 flex-column text-center lapListContainer px-0">
+            </ul>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container-fluid p-4">
+            <div class="row text-center">
+                <div class="col-12">
+                    <p class="fs-5 mb-0">طراحی شده توسط <a href="../../about-me.html" class="ms-2 about-me">محمد عرفان اکبری</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../main.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

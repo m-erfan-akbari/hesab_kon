@@ -1,0 +1,35 @@
+.calc-container{
+    max-width: 400px;
+}
+.display{
+    height: 50px;
+    font-size: 2rem;
+}
+.btn-container{
+    direction: ltr;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.btn-calc{
+    margin: 0.2rem;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    border: 0;
+    transition: scale .05s ease;
+}
+.btn-calc:hover{
+    scale: .97;
+    transition: scale .3s ease;
+}
+.btn-calc:active{
+    scale: .95;
+    transition: scale .15s ease;
+}
+
+@media (max-width: 400px) {
+    .display{
+        font-size: 1.3em;
+    }
+}

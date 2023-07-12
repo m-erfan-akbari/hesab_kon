@@ -1,0 +1,86 @@
+/* container */
+.animated{
+    margin-top: 5rem;
+    animation: falling 1s cubic-bezier(0.74, 0.15, 0.5, 1.18);
+    transition: 1s ease-in-out;
+}
+.container{
+    width: 20%;
+    transition: 2s cubic-bezier(0.37,-0.01, 0, 1.07);
+}
+.container:hover{
+    width: 100%;
+}
+#calculate{
+    height: 0;
+    overflow: hidden;
+}
+.show{
+    animation: unroll .8s cubic-bezier(0.36, 0.3, 0.05, 0.99);
+    height: auto;
+}
+
+/* box-itemes */
+.box-item{
+    height: 130px;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 0;
+}
+.box-item h5{
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 15px 15px 0 0;
+}
+
+
+/* Animation */
+@media (max-width: 750px) {
+    .animated{
+        margin-bottom: 270px;
+    }
+}
+
+@keyframes unroll {
+    From{
+        height: 0;
+    }
+    To{
+        height: 320px;
+        transition: height;
+    }
+}
+
+@keyframes falling {
+    From{
+        margin-top: -10rem;
+    }
+    To{
+        margin-top: 5rem;
+    }
+}
+
+/* Resposive unrolling*/
+
+@media (max-width:992px) {
+    @keyframes unroll {
+        From{
+            height: 0;
+        }
+        To{
+            height: 480px;
+            transition: height;
+        }
+    }
+}
+@media (max-width:576px) {
+    @keyframes unroll {
+        From{
+            height: 0;
+        }
+        To{
+            height: 960px;
+            transition: height;
+        }
+    }
+}

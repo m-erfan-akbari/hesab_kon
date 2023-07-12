@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'vazir';
+  src: url('./font/vazir.ttf');
+}
+
+/* content section */
+#resume .container{
+  max-width: 900px;
+  font-family: 'vazir';
+  color: #ccc;
+}
+
+/* general */
+.general{
+  background-color: #1c508e;
+  /* font-weight: 100; */
+}
+
+.general img{
+  width: 150px;
+  height: 150px;
+}
+
+.general p{
+  font-family: 'vazir';
+  font-size: 14px;
+}
+/* skills */
+.skills{
+  background-color: #fff;
+}
+
+.summary{
+  background-color: #383835;
+}
+
+.detailed{
+  background-color: #44443f;
+}
+
+.description-text{
+  font-size: 14px;
+}
+
+.badge{
+  font-size: 15px;
+}
+
+.circle{
+  width: 16px;
+  height: 16px;
+}
+
+.about-me{
+  color: #fff;
+}
+.about-me:hover{
+  color: #99c5ff;
+}
+
+/* progress */
+
+.progress:has(> .progress-bar){
+  background-color: #dfdfdf;
+}
